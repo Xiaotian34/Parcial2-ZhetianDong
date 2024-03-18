@@ -3,6 +3,12 @@ class Empleado {
         private String nombre;
         private String cargo;
         private double salario;
+
+        public Empleado(String nombre, String cargo, double salario) {
+            this.nombre = nombre;
+            this.cargo = cargo;
+            this.salario = salario;
+        }
     
         public String getNombre() {
             return nombre;
