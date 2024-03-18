@@ -10,12 +10,12 @@ public class SistemaGestionEmpleados {
         empleados.altaEmpleado(new Empleado("Pedro", "Gerente", 60000));
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduzca el porcentaje de aumento de salario: ");
+        System.out.print(Textos.INGRESAR_PORCENTAJE_AUMENTO); // Utilizando la constante
         double porcentaje = scanner.nextDouble();
 
         empleados.aumentarSalario(porcentaje);
         
-        System.out.println("Lista de Empleados:");
+        System.out.println(Textos.LISTA_EMPLEADOS); // Utilizando la constante
         for (Empleado empleado : empleados.getLista()) {
             System.out.println(empleado);
         }
